@@ -44,6 +44,7 @@ def plotLattice(P, L, titlr, dpid, filr):
     function inputs:
         -P: the points of the system
         -L: the lattice of the system
+        -dpid: the desired dpi of the photo
         -titlr: the deisred title for the plot
     
     general algorithm:
@@ -67,6 +68,7 @@ def plotLattice(P, L, titlr, dpid, filr):
     plt.ylabel('y')
     plt.title(titlr)
     plt.savefig(filr, dpi = dpid)
+    plt.close()
     
     
     
